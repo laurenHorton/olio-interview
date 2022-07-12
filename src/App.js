@@ -3,6 +3,7 @@ import './App.css';
 import Articles from './Articles';
 import Map from './Map';
 import { Helmet } from 'react-helmet';
+import Container from './Container';
 
 function App() {
 
@@ -17,16 +18,11 @@ function App() {
    crossorigin=""></script>
     </Helmet>
       <header className="">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
       </header>
-      <body>
-        <Articles />
-        map
-        <Map />
-      </body>
+      <Container />
     </div>
   );
 }
