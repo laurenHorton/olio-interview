@@ -1,9 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
-import Articles from './Articles';
-import Map from './Map';
 import { Helmet } from 'react-helmet';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
 import Container from './Container';
+import ArticleDetailsPage from './ArticleDetailsPage';
 
 function App() {
 
@@ -17,12 +20,12 @@ function App() {
    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
    crossorigin=""></script>
     </Helmet>
-      <header className="">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
-      <Container />
+    <Router>
+      <Routes>
+        <Route exact path="/article/:id" element={<ArticleDetailsPage />}></Route>
+        <Route exact path="/" element={<Container />} />
+      </Routes>
+    </Router>
     </div>
   );
 }
