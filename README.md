@@ -24,7 +24,6 @@ Run `npm test` to run jest tests
 - Use tailwind rather than keep all the styling in the create-react-app app.css
 - Base the styling on screen breakpoints
 - Atricle details page and article page have similar code that could be improved
-- I wouldn't use the actual ID in the url for security reasons
 - Clicking on pin on map should scroll to the option in the list
 - Add back to homepage navigation from the details page
 - Check dependencies are dependencies not dev dependencies
