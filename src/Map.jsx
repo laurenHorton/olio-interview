@@ -5,7 +5,7 @@ import getBounds from './utils/getBounds';
 
 const Map = ({articleData}) => (
   <div className='Map-container'>
-    <MapContainer style={{height: '500px'}} bounds={getBounds(articleData)} scrollWheelZoom={false}>
+    <MapContainer className='Map' bounds={getBounds(articleData)} scrollWheelZoom={false}>
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

@@ -5,8 +5,8 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import Container from './Container';
-import ArticleDetailsPage from './ArticleDetailsPage';
+import ArticlePage from './pages/ArticlePage';
+import ArticleDetailsPage from './pages/ArticleDetailsPage';
 
 function App() {
 
@@ -23,7 +23,7 @@ function App() {
     <Router>
       <Routes>
         <Route exact path="/article/:id" element={<ArticleDetailsPage />}></Route>
-        <Route exact path="/" element={<Container />} />
+        <Route exact path="/" element={<ArticlePage />} />
       </Routes>
     </Router>
     </div>

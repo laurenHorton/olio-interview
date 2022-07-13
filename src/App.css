@@ -37,14 +37,19 @@
 
 .Container-items {
     flex: 1 1 auto;
-    min-width: 400px;
+    min-width: 300px;
 }
 
 .Map-container {
     min-width: auto;
+    height: 80vh;
 }
 
 .Article {
     margin: 1rem;
     border-style: groove;
+}
+
+.Map {
+    height: 100%;
 }
