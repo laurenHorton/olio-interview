@@ -86,3 +86,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - change icon
 - add header for olio
 - fix in-line style for the map
+- use tailwind
+- styling in container use breakpoints

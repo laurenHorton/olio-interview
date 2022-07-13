@@ -1,13 +1,22 @@
-import React, { Fragment } from 'react';
+import React, { useState } from 'react';
+import './App.css'
 
 const Article = ({
   title,
   description
-}) => (
-  <Fragment>
-    <h2>{title}</h2>
-    <div>{description}</div>
-  </Fragment>
+}) => {
+const [viewMore, setViewMore] = useState(false);
+
+  return (
+    <div className='Article'>
+      {title}
+      <button onClick={() => setViewMore(!viewMore)}>View More</button>
+      {
+        viewMore &&
+        <div>{description}</div>
+      }
+    </div>
 )
+}
 
 export default Article;

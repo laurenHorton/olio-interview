@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Articles from './Articles';
 import Map from './Map';
 import fetchArticles from './utils/fecthArticles';
+import './App.css';
 
 const Container = () => {
   const [articleData, setArticleData] = useState();
@@ -17,8 +18,15 @@ const Container = () => {
 
   return (
     <body>
+    <div className="Container">
+    <div className="Container-items">
       <Articles articleData={articleData}/>
+    </div>
+    <div className="Container-items">
       <Map articleData={articleData} />
+    </div>
+      
+    </div>
     </body>
   )
 };
