@@ -71,3 +71,18 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### Lauren's next step if I had more time
 - If the api had the option of limiting the number of requests pagination could be handled on the back end
+- extract out the getBounds function and simplify
+- tests
+- styling
+- update readme run instructions
+- add leaflet and openmaps links
+- add viewed functionality
+- add detailed view
+- restructure source remove create-react-app left overs
+- set up proper linting
+- error handling on fetchArticles
+- error page
+- pagination
+- change icon
+- add header for olio
+- fix in-line style for the map
