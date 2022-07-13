@@ -1,3 +1,8 @@
+/**
+ * update the local storage list of viewed articles
+ *
+ * @param {number} id
+ */
 const updateViewedArticles = (id) => {
   const viewedArticles = JSON.parse(localStorage.getItem("viewedArticles"));
   if (!viewedArticles) {

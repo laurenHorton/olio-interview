@@ -1,3 +1,11 @@
+/**
+ * Pulls out the highest and lowest long and lat from a list of article data to create a max and min for both
+ *
+ * @param {object[]} articleData
+ * @returns
+ */
+
+// gets the smallest long and latitude and the largest long and lat to create a boundary
 const getBounds = (articleData) => {
   let lowestLat = articleData[0].location.latitude;
   let highestLat = articleData[0].location.latitude;
