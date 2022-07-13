@@ -29,27 +29,27 @@
 }
 
 .Container {
-    display: flex;
-    margin: 2rem;
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: flex;
+  margin: 2rem;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .Container-items {
-    flex: 1 1 auto;
-    min-width: 300px;
+  flex: 1 1 auto;
+  min-width: 300px;
 }
 
 .Map-container {
-    min-width: auto;
-    height: 80vh;
+  min-width: auto;
+  height: 80vh;
 }
 
 .Article {
-    margin: 1rem;
-    border-style: groove;
+  margin: 1rem;
+  border-style: groove;
 }
 
 .Map {
-    height: 100%;
+  height: 100%;
 }
