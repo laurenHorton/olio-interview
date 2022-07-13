@@ -10,7 +10,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### Test run Instructions
 
-Run `npm test` to run jest tests
+Run `npm test` to run jest tests. Test files are in src/__test__
 
 ### Lauren's next step if I had more time
 
