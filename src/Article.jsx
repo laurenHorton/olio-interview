@@ -4,8 +4,10 @@ import "./App.css";
 const Article = ({ title, id, isViewed }) => (
   <div className="Article">
     {title}
-    <a href={`/article/${id}`}>View More</a>
-    {isViewed && <div>Viewed</div>}
+    {isViewed && <span className="Float-right">Viewed ✔</span>}
+    <div>
+      <a href={`/article/${id}`}>View More</a>
+    </div>
   </div>
 );
 

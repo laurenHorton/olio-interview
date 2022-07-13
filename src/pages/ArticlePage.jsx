@@ -15,16 +15,14 @@ const ArticlePage = () => {
   if (isLoading) return <div>Loading...</div>;
 
   return (
-    <body>
-      <div className="Container">
-        <div className="Container-items">
-          <Articles articleData={articleData} />
-        </div>
-        <div className="Container-items">
-          <Map articleData={articleData} />
-        </div>
+    <main className="Container">
+      <div className="Container-items">
+        <Articles articleData={articleData} />
       </div>
-    </body>
+      <div className="Container-items">
+        <Map articleData={articleData} />
+      </div>
+    </main>
   );
 };
 

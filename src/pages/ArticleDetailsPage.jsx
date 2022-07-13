@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Fragment } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import fetchArticles from "../utils/fecthArticles";
 import updateViewedArticles from "../utils/updateViewedArticles";
@@ -11,19 +11,20 @@ const ArticleDetailsPage = () => {
   useEffect(() => {
     fetchArticles(setArticleData, setIsLoading, id);
     updateViewedArticles(id);
-  }, []);
+  }, [id]);
 
   if (isLoading) return <div>Loading...</div>;
 
   return (
-    <Fragment>
+    <main>
       <h1>{articleData.title}</h1>
       <p>{articleData.description}</p>
       <h2>Photos</h2>
       {articleData.photos.map((photo) => (
-        <img key={photo.uuid} src={photo.files.large} />
+        // alt text should be localised and meaning full if the img is not decorative but api doesn't provide one so for now leaving blank
+        <img key={photo.uid} src={photo.files.large} alt="" />
       ))}
-    </Fragment>
+    </main>
   );
 };
 
