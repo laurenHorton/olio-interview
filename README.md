@@ -88,3 +88,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - fix in-line style for the map
 - use tailwind
 - styling in container use breakpoints
+- remove duplicate code from atricle details page
+- console warnings
+- wouldn't use actual ids in url
+- article data page better destructure

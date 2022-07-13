@@ -12,8 +12,10 @@ const Map = ({articleData}) => (
       />
       {
           articleData.map((article) => (
-            <Marker position={[article.location.latitude, article.location.longitude]}>
-            </Marker>
+            <Marker
+              key={article.id}
+              position={[article.location.latitude, article.location.longitude]}
+            />
           ))
       }
     </MapContainer>

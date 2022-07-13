@@ -3,10 +3,11 @@ import './App.css'
 
 const Article = ({
   title,
+  id,
 }) => (
     <div className='Article'>
       {title}
-      <a href="/article">View More</a>
+      <a href={`/article/${id}`}>View More</a>
     </div>
 )
 
