@@ -22,15 +22,14 @@ Run `npm test` to run jest tests
 - Change the page icon from the react default
 - Add a Olio head, banner and styling
 - Use tailwind rather than keep all the styling in the create-react-app app.css
-- Base the styling on screen breakpoints
+- Make the page responsive and mobile friendly
 - Atricle details page and article page have similar code that could be improved
 - Clicking on pin on map should scroll to the option in the list
 - Add back to homepage navigation from the details page
-- Check dependencies are dependencies not dev dependencies
 - Accessibility improvements
 - Convert the fetch to use async await
 - Alot of styling!
 
 ### Dependencies
 
-I used [leaflet](https://leafletjs.com/index.html) for the map functionality and [OpenStreetMaps](https://www.openstreetmap.org/copyright) for the tiles. In a live project I would make sure to include the copyright links and documentation.
+I used [leaflet](https://leafletjs.com/index.html) for the map functionality and [OpenStreetMaps](https://www.openstreetmap.org/copyright) for the tiles.
