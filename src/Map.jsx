@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapContainer, TileLayer, Marker } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import './App.css';
 import getBounds from './utils/getBounds';
 
@@ -15,7 +15,11 @@ const Map = ({articleData}) => (
             <Marker
               key={article.id}
               position={[article.location.latitude, article.location.longitude]}
-            />
+            >
+              <Popup>
+                {article.title} <a href={`/article/${article.id}`}  target="_blank" rel="noreferrer">view details</a>
+              </Popup>
+            </Marker>
           ))
       }
     </MapContainer>
