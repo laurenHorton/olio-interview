@@ -77,7 +77,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - update readme run instructions
 - add leaflet and openmaps links
 - add viewed functionality
-- add detailed view
 - restructure source remove create-react-app left overs
 - set up proper linting
 - error handling on fetchArticles
@@ -92,3 +91,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - console warnings
 - wouldn't use actual ids in url
 - article data page better destructure
+- clicking on pin on map should scroll to the option in the list
+- add back to homepage

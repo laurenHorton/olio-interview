@@ -1,6 +1,8 @@
 import React, {useState, useEffect, Fragment} from 'react';
 import {useParams} from "react-router-dom";
 import fetchArticles from './utils/fecthArticles';
+import updateViewedArticles from './utils/updateViewedArticles';
+
 
 const ArticleDetailsPage = () => {
   const {id} = useParams();
@@ -8,7 +10,8 @@ const ArticleDetailsPage = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    fetchArticles(setArticleData, setIsLoading, id)
+    fetchArticles(setArticleData, setIsLoading, id);
+    updateViewedArticles(id);
   }, []);
 
   if(isLoading) return (

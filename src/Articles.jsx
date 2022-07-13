@@ -1,11 +1,9 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import Article from './Article';
 
 const Articles = ({articleData}) => (
   articleData.map((article) => (
-    <Fragment key={article.id}>
-      <Article {...article}/>
-    </Fragment>
+    <Article key={article.id} {...article}/>
   ))
 );
 
