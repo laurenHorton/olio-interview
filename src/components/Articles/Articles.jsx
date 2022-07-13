@@ -1,6 +1,6 @@
 import React from "react";
 import Article from "./Article";
-import getViewedArticles from "./utils/getViewedArticles";
+import getViewedArticles from "../../utils/getViewedArticles";
 
 const Articles = ({ articleData }) =>
   articleData.map((article) => {

@@ -31,13 +31,11 @@ Run `npm test` to run jest tests
 - use cookies instead of local storage?
 - check dependencies are dependencies not dev dependencies
 - Accessibility
+- convert fetch to use async await
 
 ### To Do
 
-- restructure source remove create-react-app left overs
-- console warnings
 - code comments
-- tests
 - styling
 
 ### Dependencies

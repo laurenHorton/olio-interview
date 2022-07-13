@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "../../App.css";
 
 const Article = ({ title, id, isViewed }) => (
   <div className="Article">

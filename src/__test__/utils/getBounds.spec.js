@@ -1,5 +1,5 @@
-import getBounds from "../utils/getBounds";
-import generateMockArticleData from "./generateMockArticleData";
+import getBounds from "../../utils/getBounds";
+import generateMockArticleData from "../generateMockArticleData";
 
 describe("getBounds tests", () => {
   const mockArticleData = generateMockArticleData();

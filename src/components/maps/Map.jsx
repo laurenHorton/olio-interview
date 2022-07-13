@@ -1,7 +1,7 @@
 import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import "./App.css";
-import getBounds from "./utils/getBounds";
+import "../../App.css";
+import getBounds from "../../utils/getBounds";
 
 const Map = ({ articleData }) => (
   <div className="Map-container">

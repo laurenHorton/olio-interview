@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import Articles from "../Articles";
-import Map from "../Map";
-import fetchArticles from "../utils/fecthArticles";
-import "../App.css";
+import Articles from "../Articles/Articles";
+import Map from "../maps/Map";
+import fetchArticles from "../../utils/fecthArticles";
+import "../../App.css";
 
 const ArticlePage = () => {
   const [articleData, setArticleData] = useState();

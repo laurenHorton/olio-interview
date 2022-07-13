@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import fetchArticles from "../utils/fecthArticles";
-import updateViewedArticles from "../utils/updateViewedArticles";
+import fetchArticles from "../../utils/fecthArticles";
+import updateViewedArticles from "../../utils/updateViewedArticles";
 
 const ArticleDetailsPage = () => {
   const { id } = useParams();
