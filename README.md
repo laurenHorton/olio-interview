@@ -14,29 +14,23 @@ Run `npm test` to run jest tests
 
 ### Lauren's next step if I had more time
 
-- If the api had the option of limiting the number of requests pagination could be handled on the back end
-- extract out the getBounds function and simplify
-- error handling on fetchArticles
-- error page
-- pagination
-- change icon
-- add header for olio
-- use tailwind
-- styling in container use breakpoints
-- remove duplicate code from atricle details page
-- wouldn't use actual ids in url
-- article data page better destructure
-- clicking on pin on map should scroll to the option in the list
-- add back to homepage
-- use cookies instead of local storage?
-- check dependencies are dependencies not dev dependencies
-- Accessibility
-- convert fetch to use async await
-
-### To Do
-
-- code comments
-- styling
+- If the api has the capacbility of getting individual articles with an ID number I would have used this to improve the details page loading
+- The getBounds function could be simplified
+- Add error handling on fetchArticles
+- Add error page for a failed request
+- Add some pagination so larger number of requests don't make the page messy
+- Change the page icon from the react default
+- Add a Olio head, banner and styling
+- Use tailwind rather than keep all the styling in the create-react-app app.css
+- Base the styling on screen breakpoints
+- Atricle details page and article page have similar code that could be improved
+- I wouldn't use the actual ID in the url for security reasons
+- Clicking on pin on map should scroll to the option in the list
+- Add back to homepage navigation from the details page
+- Check dependencies are dependencies not dev dependencies
+- Accessibility improvements
+- Convert the fetch to use async await
+- Alot of styling!
 
 ### Dependencies
 
